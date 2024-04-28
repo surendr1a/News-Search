@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Search App</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS for styling -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- Include Axios for HTTP requests -->
+</head>
+<body>
+    <header>
+        <h1>News Search</h1> <!-- Main heading -->
+        <div id="search-section"> <!-- Section for search box and category button -->
+            <input type="text" id="search-box" placeholder="Enter search term..."> <!-- Live search box -->
+            <div class="dropdown"> <!-- Dropdown for categories -->
+                <button id="category-button">Categories</button> <!-- Button to show/hide categories -->
+                <div class="dropdown-content"> <!-- Content for category options -->
+                    <a href="#" class="category" data-category="Agriculture">Agriculture</a>
+                    <a href="#" class="category" data-category="Arts & Culture">Arts & Culture</a>
+                    <a href="#" class="category" data-category="Artificial Intelligence">Artificial Intelligence</a>
+                    <a href="#" class="category" data-category="Astrology">Astrology</a>
+                    <a href="#" class="category" data-category="Aviation">Aviation</a>
+                    <a href="#" class="category" data-category="Beauty">Beauty</a>
+                    <a href="#" class="category" data-category="Biotechnology">Biotechnology</a>
+                    <a href="#" class="category" data-category="Business">Business</a>
+                    <a href="#" class="category" data-category="Climate Change">Climate Change</a>
+                    <a href="#" class="category" data-category="Comedy">Comedy</a>
+                    <a href="#" class="category" data-category="Crime">Crime</a>
+                    <a href="#" class="category" data-category="Cybersecurity">Cybersecurity</a>
+                    <a href="#" class="category" data-category="Defense">Defense</a>
+                    <a href="#" class="category" data-category="Disaster Relief">Disaster Relief</a>
+                    <a href="#" class="category" data-category="Documentaries">Documentaries</a>
+                    <a href="#" class="category" data-category="Education">Education</a>
+                    <a href="#" class="category" data-category="Entertainment">Entertainment</a>
+                    <a href="#" class="category" data-category="Environment">Environment</a>
+                    <a href="#" class="category" data-category="Fashion">Fashion</a>
+                    <a href="#" class="category" data-category="Finance">Finance</a>
+                    <a href="#" class="category" data-category="Food">Food</a>
+                    <a href="#" class="category" data-category="Gaming">Gaming</a>
+                    <a href="#" class="category" data-category="Genetics">Genetics</a>
+                    <a href="#" class="category" data-category="Health">Health</a>
+                    <a href="#" class="category" data-category="History">History</a>
+                    <a href="#" class="category" data-category="Home & Garden">Home & Garden</a>
+                    <a href="#" class="category" data-category="Human Interest">Human Interest</a>
+                    <a href="#" class="category" data-category="Humor">Humor</a>
+                    <a href="#" class="category" data-category="Immigration">Immigration</a>
+                    <a href="#" class="category" data-category="Infrastructure">Infrastructure</a>
+                    <a href="#" class="category" data-category="Innovation">Innovation</a>
+                    <a href="#" class="category" data-category="International">International</a>
+                    <a href="#" class="category" data-category="Investigations">Investigations</a>
+                    <a href="#" class="category" data-category="Law">Law</a>
+                    <a href="#" class="category" data-category="Lifestyle">Lifestyle</a>
+                    <a href="#" class="category" data-category="Local">Local</a>
+                    <a href="#" class="category" data-category="Luxury">Luxury</a>
+                    <a href="#" class="category" data-category="Manufacturing">Manufacturing</a>
+                    <a href="#" class="category" data-category="Marketing">Marketing</a>
+                    <a href="#" class="category" data-category="Medicine">Medicine</a>
+                    <a href="#" class="category" data-category="Mental Health">Mental Health</a>
+                    <a href="#" class="category" data-category="Middle East">Middle East</a>
+                    <a href="#" class="category" data-category="Money">Money</a>
+                    <a href="#" class="category" data-category="Motorsports">Motorsports</a>
+                    <a href="#" class="category" data-category="Movies">Movies</a>
+                    <a href="#" class="category" data-category="Music">Music</a>
+                    <a href="#" class="category" data-category="Mystery">Mystery</a>
+                    <a href="#" class="category" data-category="National">National</a>
+                    <a href="#" class="category" data-category="Nature">Nature</a>
+                    <a href="#" class="category" data-category="Obituaries">Obituaries</a>
+                    <a href="#" class="category" data-category="Opinion">Opinion</a>
+                    <a href="#" class="category" data-category="Parenting">Parenting</a>
+                    <a href="#" class="category" data-category="Pets">Pets</a>
+                    <a href="#" class="category" data-category="Politics">Politics</a>
+                    <a href="#" class="category" data-category="Real Estate">Real Estate</a>
+                    <a href="#" class="category" data-category="Religion">Religion</a>
+                    <a href="#" class="category" data-category="Retail">Retail</a>
+                    <a href="#" class="category" data-category="Robotics">Robotics</a>
+                    <a href="#" class="category" data-category="Science">Science</a>
+                    <a href="#" class="category" data-category="Security">Security</a>
+                    <a href="#" class="category" data-category="Shopping">Shopping</a>
+                    <a href="#" class="category" data-category="Small Business">Small Business</a>
+                    <a href="#" class="category" data-category="Social Media">Social Media</a>
+                    <a href="#" class="category" data-category="Space">Space</a>
+                    <a href="#" class="category" data-category="Sports">Sports</a>
+                    <a href="#" class="category" data-category="Spotlight">Spotlight</a>
+                    <a href="#" class="category" data-category="Sustainability">Sustainability</a>
+                    <a href="#" class="category" data-category="Technology">Technology</a>
+                    <a href="#" class="category" data-category="Travel">Travel</a>
+                    <a href="#" class="category" data-category="True Crime">True Crime</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="news-container"></main> <!-- Container for news articles -->
+    <script src="script.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>

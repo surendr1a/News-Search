@@ -1,0 +1,138 @@
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Styling for the dropdown menu */
+.dropdown {
+    position: relative; /* Important for dropdown positioning */
+    display: inline-block;
+}
+
+#category-button {
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    z-index: 1;
+    max-height: 200px; /* Limit height to add scrollbar if necessary */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Hover effect for category links */
+}
+
+/* Show dropdown content when the button is clicked */
+.dropdown.show .dropdown-content {
+    display: block; /* Makes the dropdown visible */
+}
+
+#search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#search-box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.dropdown {
+    position: relative; /* Important for dropdown positioning */
+    display: inline-block;
+}
+
+#category-button {
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Hover effect for category links */
+}
+
+/* Show dropdown content when the button is clicked */
+.dropdown.show .dropdown-content {
+    display: block; /* Makes the dropdown visible */
+}
+
+#news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.article {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.article h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.article p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.article a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
